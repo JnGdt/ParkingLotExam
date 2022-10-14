@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import './ParkingLot.css';
-
-
 import EntryForm from './components/EntryForm';
 import AddForm from './components/AddForm';
 import LotConsole from './components/LotConsole';
@@ -43,8 +41,8 @@ export default class ParkingLot extends Component {
 		const AddStore = connect(this.addFormData, this.addFormActions)(AddForm);
 		return (
 			<div className="main container-fluid">
-				<header className="nav navbar justify-content-center">
-					<h1>Automated Parking Lot</h1>
+				<header className="nav navbar justify-content-center fonxl">
+					<h1 className="display-1"><strong>Parking Lot</strong></h1>
 				</header>
 				
 				<div className="content container">

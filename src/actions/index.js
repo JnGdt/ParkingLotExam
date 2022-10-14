@@ -1,4 +1,4 @@
-
+/* THIS IS THE EXAMPLE DATA */
 export const changeInput = (name,value) => {
 	return {
 		type: 'UPDATE_FORM',

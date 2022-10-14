@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import './Entryform.css'
 export default class EntryForm extends Component {
 
 	constructor(props){
@@ -33,14 +33,14 @@ export default class EntryForm extends Component {
 		this.setState({error:er});
 
 	}
-
+/* THIS COMPONENT THAT YOU CAN PUT THE VALUE AND CLICK THE GENERATE BUTTON */
 	render() {
 		return (
 			<div className="entry-block">
 				<div className="row">
-					<label className="col-5"><span className="col-6">Total Parking Slots </span><input className="col-6" type="number" name="total_slots" onChange={this.changeHandler} value={this.props.total_slots} /></label>
-					<label className="col-4"><span className="col-6">Initial Cars </span><input type="number" className="col-6" name="filled" onChange={this.changeHandler} value={this.props.filled } /></label>
-					<div className="col-3"><button className="btn btn-primary btn-sm" onClick={this.submitHandler}>Generate</button></div>
+					<label className="col-5"><span className="col-6">Total Parking Slots: </span><input className="col-6" type="number" name="total_slots" onChange={this.changeHandler} value={this.props.total_slots} /></label>
+					<label className="col-4"><span className="col-6">Initial Cars: </span><input type="number" className="col-6" name="filled" onChange={this.changeHandler} value={this.props.filled } /></label>
+					<div className="col-3"><button className="btn btn-success" onClick={this.submitHandler}>Generate</button></div>
 				</div>
 				<div className="error ml-3 mt-2">{this.state.error}</div>
 			</div>

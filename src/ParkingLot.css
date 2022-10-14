@@ -1,11 +1,56 @@
-.nav{
-	padding: 3%;
-	background-color: #b2002f;
+*, * {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
-.content{
-	margin-top: 4%;
+body {
+	background-image: url(./imgs/bgcars.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
+.nav{
+	background: #222 -webkit-gradient(linear, left top, right top, from(rgb(219, 219, 219)), 
+	to(#222), color-stop(0.5, #fff)) 0 0 no-repeat;
+	-webkit-background-size: 150px;
+	color: black;
+	-webkit-background-clip: text;
+	-webkit-animation-name: shine;
+	-webkit-animation-duration: 9s;
+	-webkit-animation-iteration-count: infinite;
+	text-shadow: 0 0px 0px rgba(255, 255, 255, 0.5);
+	width: 100%;
+}
+@keyframes shine {
+	0%, 10% {
+		background-position: -1000px;
+	}
+	20% {
+		background-position: top left;
+	}
+	90% {
+		background-position: top right;
+	}
+	100% {
+		background-position: 1000px;
+	}
+}
+
+
+.content{
+	margin-top: 20px;
+}
+
+	.container {
+	background: rgba(0, 0, 0, 0.19);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(4.3px);
+	-webkit-backdrop-filter: blur(4.3px);
+	border-radius: 5px;
+	padding: 70px;
+	color: #FFF;
+	}
 
 .form-input{
 	display: inline;
@@ -15,30 +60,26 @@
 	color: #bc1600;	
 }
 
-.entry-block{
-	border: 1px solid;
-	border-radius: 5px;
-	padding: 3%;
-}
 
 .add-block{
-	margin-top: 3%;
+	/* margin-top: 3%; */
+	padding: 50px;
+	margin: 10px auto;
 	border: 1px solid;
 	border-radius: 5px;
-	padding: 2%;
 }
 
 .data-table{
-	margin:3%;
-	padding: 2%;
+	margin: 10px auto;
+	width: 100%;
 	border: 1px solid;
 	border-radius: 5px;
 }
 
 .table-row{
-	margin-bottom: 1%;
+	margin-bottom: 10px;
 }
 
 .filters{
-	margin-bottom: 1%;
+	margin-bottom: 10px;
 }

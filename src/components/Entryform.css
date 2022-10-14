@@ -1,0 +1,16 @@
+span {
+    background-color: black;
+    outline: hidden;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+input {
+    height: 24px;
+    background-color: rgba(41, 41, 41, 0.5);
+    color: #FFFF;
+    border: none;
+    margin: 10px auto;
+}
+
